@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@font-face {
+    font-family: 'Digital-7';
+    src: url('../digital-7/digital-7.ttf');
+}
+body{
+    background-color: #590f1c;
+    height: 100vh;
+    width: 100vb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: #fff;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.frame{
+    display: flex;
+    gap: 10px;
+}
+
+h3{
+    font-weight: 500;
+    color: #130f40;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.hrs , .min , .sec , .ms , .coln{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Digital-7';
+}
+.coln{
+    height: 50px;
+    width: 10px;
+}
+.buttons{
+    margin-top: 25px;
+}
+.buttons button{
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.start-btn{
+    background-color: #33E075;
+}
+.stop-btn{
+    background-color: #FF1F1F;
+}
+.reset-btn{
+    background-color: #636161;
+}
+
+.start-btn-active,.stop-btn-active{
+    pointer-events: none;
+    opacity: 0.5;
+}
